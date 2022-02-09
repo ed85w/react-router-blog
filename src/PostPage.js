@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams, Link } from "react-router-dom";
 
 const PostPage = ({posts, handleDelete}) => {
   const {id} = useParams(); //as defined in app.js route

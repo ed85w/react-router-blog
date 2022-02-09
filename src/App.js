@@ -78,7 +78,7 @@ function App() {
         search={search} 
         setSearch={setSearch} 
       />} >
-        <Route index element={<Home posts={searchResults}/>} />
+        <Route index element={<Home posts={searchResults}/>}></Route>
         <Route path="post">
           <Route index element={<NewPost 
             handleSubmit={handleSubmit}
@@ -86,14 +86,14 @@ function App() {
             setPostTitle={setPostTitle}
             postBody={postBody}
             setPostBody={setPostBody}
-          />} />
+          />}></Route>
           <Route path=":id" element={<PostPage 
             posts={posts} 
             handleDelete={handleDelete}
-          />} />
+          />}></Route>
         </Route>
-        <Route path="*" element={<Missing />} />
-        <Route path="about" element={<About />} />
+        <Route path="*" element={<Missing />}></Route>
+        <Route path="about" element={<About />}></Route>
       </Route>
     </Routes>
   );
